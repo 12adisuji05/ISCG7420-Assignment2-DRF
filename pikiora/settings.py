@@ -148,7 +148,7 @@ REST_FRAMEWORK = {
 }
 
 # CORS - which websites (the React frontend) can call this API
-CORS_ALLOWED_ORIGINS = ["http://localhost:5173", "http://127.0.0.1:5173"]
+CORS_ALLOWED_ORIGINS = ["http://localhost:3000", "http://127.0.0.1:3000"]
 FRONTEND_URL = os.environ.get("FRONTEND_URL")
 if FRONTEND_URL:
     CORS_ALLOWED_ORIGINS.append(FRONTEND_URL)
